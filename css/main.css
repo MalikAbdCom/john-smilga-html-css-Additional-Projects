@@ -386,3 +386,78 @@ ul {
 /*end of navigation*/
 /*end of navigation*/
 /*end of navigation*/
+/*//////////////////////////////////*/
+/*header-content*/
+/*header-content*/
+/*header-content*/
+.header-content {
+  background-color: var(--white);
+  padding-bottom: 4rem;
+  /*height: calc(80vh + 4rem);*/
+}
+
+.grid-header {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-img {
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .header-img {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .grid-header {
+    padding-top: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .header-info {
+    text-align: center;
+  }
+
+  .header-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-info p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-img {
+    display: none;
+  }
+}
+
+/*end of header-content*/
+/*end of header-content*/
+/*end of header-content*/
+/*/////////////////////////////////*/
+/*main*/
+/*main*/
+/*main*/
+/*end of main*/
+/*end of main*/
+/*end of main*/
+/*end of main*/
