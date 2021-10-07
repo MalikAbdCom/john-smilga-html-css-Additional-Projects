@@ -413,6 +413,35 @@ ul {
   padding-right: 2rem;
 }
 
+.header-info p span {
+  font-size: 1.1rem;
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  border-bottom: var(--primary-500) solid 2px;
+}
+
+.header-info a {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  box-shadow: var(--shadow-1);
+  animation: malikabd 2s infinite;
+}
+
+@keyframes malikabd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 500px) {
   .header-img {
     padding-right: 1rem;
