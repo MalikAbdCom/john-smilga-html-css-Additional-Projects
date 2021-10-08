@@ -487,6 +487,68 @@ ul {
 /*main*/
 /*main*/
 /*main*/
+main {
+  /*padding: 2rem;*/
+}
+
+main h2 {
+  text-align: center;
+}
+
+/*items*/
+.grid-project-items {
+  margin: 4rem auto;
+  display: grid;
+  gap: 3rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-project-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1204px) {
+  .grid-project-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  margin: 0 1rem;
+  max-width: 30rem;
+  height: 20rem;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-4);
+  display: grid;
+  grid-template-rows: 80% 20%;
+  transition: var(--transition);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.img-item-container {
+  width: 100%;
+  height: 100%;
+}
+
+.img-item-container .img {
+  height: 100%;
+}
+
+.item-title {
+  display: grid;
+  place-items: center;
+}
+
+.item-title h3 {
+  line-height: initial;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 /*end of main*/
 /*end of main*/
 /*end of main*/
