@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/47eb3b40e8.js"
+    ></script>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="task-manager.css" />
+    <title>Task manager</title>
+  </head>
+  <body>
+    <main>
+      <div class="margin">
+        <!--        submit container-->
+        <form action="#" class="task-form">
+          <h4>task manager</h4>
+          <div class="form-control">
+            <label>
+              <input type="text" placeholder="eg: Bangun Pagi" />
+            </label>
+            <button class="btn">submit</button>
+          </div>
+          <small>that was an error</small>
+        </form>
+        <!--      end of submit container-->
+        <!--        task container-->
+        <section class="task-container">
+          <p>loading...</p>
+
+          <!--          single item task-->
+          <div class="item-task">
+            <h5 class="undone">
+              <span><i class="far fa-check-circle"></i></span>Task name
+            </h5>
+            <div class="icon-tasks">
+              <a href="task.html" class="icon-task">
+                <i class="fas fa-edit"></i>
+              </a>
+              <button class="icon-task">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <!--          end oof single item task-->
+          <!--          single item task-->
+          <div class="item-task">
+            <h5 class="done">
+              <span><i class="far fa-check-circle"></i></span>Task name
+            </h5>
+            <div class="icon-tasks">
+              <a href="task.html" class="icon-task">
+                <i class="fas fa-edit"></i>
+              </a>
+              <button class="icon-task">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <!--          end oof single item task-->
+        </section>
+        <!--        end of task container-->
+      </div>
+    </main>
+  </body>
+</html>
