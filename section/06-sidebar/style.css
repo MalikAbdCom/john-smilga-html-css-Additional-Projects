@@ -268,3 +268,131 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
 }
+
+/*/////////////////////////////////////////*/
+/*sidebar*/
+/*sidebar*/
+/*sidebar*/
+.toggle-button {
+  display: block;
+  margin: 1.5rem;
+  position: fixed;
+  font-size: 2.5rem;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--primary-500);
+  animation: bouncing 2s linear infinite;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*end of toggle button*/
+/*end of toggle button*/
+/*end of toggle button*/
+/*////////////////////////////////////*/
+.sidebar {
+  position: relative;
+  background-color: var(--grey-200);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.side-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.img-side .img-side-header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.toggle-side {
+  display: block;
+  font-size: 2rem;
+
+  border: none;
+
+  background-color: transparent;
+
+  color: var(--primary-500);
+}
+
+/*//////////////////////////////////////*/
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.side-link {
+  transition: var(--transition);
+  padding: 1rem 0 1rem 1rem;
+}
+
+.side-link:hover {
+  padding-left: 1.5rem;
+  background-color: var(--grey-300);
+}
+
+.side-link a {
+  color: var(--primary-700);
+}
+
+/*//////////////////////////////////*/
+.side-icon {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  margin: 0 auto;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icon-item .fab {
+  font-size: 2rem;
+}
+
+.icon-item .fa-twitter {
+  color: deepskyblue;
+}
+
+.icon-item .fa-linkedin {
+  color: dodgerblue;
+}
+
+.icon-item .fa-instagram {
+  color: crimson;
+}
+
+.icon-item .fa-facebook {
+  color: blue;
+}
+
+.icon-item .fa-youtube {
+  color: red;
+}
+
+/*////////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 30rem;
+    margin-left: 0;
+  }
+}
