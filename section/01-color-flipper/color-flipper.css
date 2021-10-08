@@ -388,106 +388,44 @@ ul {
 /*end of navigation*/
 /*end of navigation*/
 /*//////////////////////////////////*/
-/*header-content*/
-/*header-content*/
-/*header-content*/
-.header-content {
-  background-color: var(--white);
-  padding-bottom: 4rem;
-  /*height: calc(80vh + 4rem);*/
-}
-
-.grid-header {
-  padding-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  align-items: center;
-  gap: 2rem;
-}
-
-.header-info {
-  width: 80%;
+/*main*/
+/*main*/
+/*main*/
+main {
+  width: 100%;
   margin: 0 auto;
+  max-width: 1170px;
+  height: calc(100vh - 4rem);
+  display: grid;
+  place-items: center;
 }
 
-.header-img {
-  padding-right: 2rem;
+.center {
+  text-align: center;
+  width: 85%;
+  max-width: 50rem;
 }
 
-.header-info p span {
-  font-size: 1.1rem;
-  display: inline-block;
-  font-style: italic;
-  font-weight: bold;
-  border-bottom: var(--primary-500) solid 2px;
+.center h1 {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: var(--borderRadius);
+  margin-bottom: 3rem;
+  background-color: var(--primary-300);
 }
 
-.header-info a {
-  display: inline-block;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 0.75rem 1.25rem;
-  box-shadow: var(--shadow-1);
-  animation: malikabd 2s infinite;
+.center h1 span {
+  color: #f8fafc;
 }
 
-@keyframes malikabd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.center .btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
 }
 
-@media screen and (max-width: 500px) {
-  .header-img {
-    padding-right: 1rem;
+@media (min-width: 678px) {
+  .center h1 {
+    font-size: 3rem;
   }
 }
-
-@media (max-width: 768px) {
-  .header-content {
-    height: auto;
-    padding: 1rem 0;
-  }
-
-  .grid-header {
-    padding-top: 0;
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .header-info {
-    text-align: center;
-  }
-
-  .header-info h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .header-info p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .header-img {
-    display: none;
-  }
-}
-
-/*end of header-content*/
-/*end of header-content*/
-/*end of header-content*/
-/*/////////////////////////////////*/
-/*main*/
-/*main*/
-/*main*/
-/*end of main*/
-/*end of main*/
-/*end of main*/
-/*end of main*/
