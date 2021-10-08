@@ -7,7 +7,37 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="./task-manager.css" />
+    <title>Task edit</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="section-center">
+        <form action="#" class="form-edit">
+          <h2>edit task</h2>
+          <div class="editing">
+            <p>task ID</p>
+            <p>123456</p>
+            <p>name</p>
+            <label>
+              <input type="text" placeholder="type here" />
+            </label>
+          </div>
+          <div class="completed">
+            <p>completed</p>
+            <label for="check"
+              ><input type="checkbox" name="#" id="check"
+            /></label>
+          </div>
+
+          <button class="btn">edit</button>
+          <small>There Was An Error</small>
+        </form>
+      </section>
+      <section>
+        <a href="./task-manager.html" class="btn back">back to tasks</a>
+      </section>
+    </main>
+  </body>
 </html>

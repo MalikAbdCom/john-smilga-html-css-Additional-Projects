@@ -418,3 +418,84 @@ h5.done {
 /*end of single task*/
 /*end of single task*/
 /*//////////////////////*/
+/*task edit*/
+/*task edit*/
+/*task edit*/
+.form-edit {
+  background-color: var(--white);
+  padding: 1rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-3);
+}
+
+.editing {
+  margin-bottom: 1rem;
+}
+
+.editing * {
+  margin: 0.5rem;
+}
+
+.editing p:nth-child(odd) {
+  /*background-color: red;*/
+  text-transform: capitalize;
+}
+
+.editing input {
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: var(--borderRadius);
+  width: 90%;
+  background-color: var(--grey-100);
+  border: 1px solid var(--grey-400);
+}
+
+.completed * {
+  margin: 0.5rem;
+}
+
+.completed {
+  display: grid;
+  grid-template-columns: 180px auto;
+}
+
+@media screen and (min-width: 758px) {
+  .form-edit {
+    padding: 2rem;
+  }
+
+  .editing input {
+    width: 100%;
+  }
+
+  .editing p:nth-child(odd) {
+    width: 170px;
+  }
+
+  .editing {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+
+.form-edit .btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.form-edit small {
+  color: red;
+}
+
+section .back {
+  padding: 0.5rem 1rem;
+}
+
+/*end of task edit*/
+/*end of task edit*/
+/*end of task edit*/
