@@ -309,12 +309,34 @@ ul {
   text-transform: capitalize;
 }
 
-.nav-link a {
+.nav-menu a {
   color: var(--grey-900);
 }
 
 .nav-icon a {
   color: var(--primary-500);
+}
+
+.nav-on {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-2);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    padding: 1rem;
+    font-weight: 600;
+  }
+
+  .nav-menu:hover {
+    background-color: var(--grey-400);
+    padding-left: 1.5rem;
+  }
+
+  .nav-menu:hover a {
+    color: white;
+  }
 }
 
 @media (min-width: 768px) {
@@ -325,6 +347,11 @@ ul {
 
   .mobile-nav {
     margin: 0;
+  }
+
+  .nav-menu {
+    padding: 0.5rem;
+    font-weight: 400;
   }
 
   .nav-button {
