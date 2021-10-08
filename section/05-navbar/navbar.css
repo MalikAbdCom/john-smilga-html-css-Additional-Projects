@@ -301,6 +301,7 @@ ul {
   text-transform: capitalize;
   transition: var(--transition);
   display: none;
+  text-align: right;
 }
 
 .nav-icons {
@@ -335,7 +336,7 @@ ul {
 
   .nav-menu:hover {
     background-color: var(--grey-400);
-    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .nav-menu:hover a {
