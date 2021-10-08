@@ -303,7 +303,7 @@ ul {
 /*////////////////////////////////////*/
 .sidebar {
   position: relative;
-  background-color: var(--grey-200);
+  background-color: var(--grey-100);
   min-height: 100vh;
   padding: 2rem 0;
 }
@@ -395,4 +395,20 @@ ul {
     width: 30rem;
     margin-left: 0;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .side-menu {
+    font-size: 1.5rem;
+  }
+}
+
+/*/////////////////////////////////////////*/ /*toggle sidebar style*/ /*toggle sidebar style*/ /*toggle sidebar style*/
+.sidebar {
+  transition: var(--transition);
+  transform: translateX(-100%);
+}
+
+.toggle-on {
+  transform: translateX(0);
 }

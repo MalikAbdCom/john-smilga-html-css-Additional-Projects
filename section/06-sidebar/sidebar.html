@@ -16,11 +16,11 @@
     <title>Sidebar</title>
   </head>
   <body>
-    <button class="toggle-button">
+    <button class="toggle-button" id="toggle-button">
       <i class="fas fa-bars"></i>
     </button>
     <!--  sidebar-->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="side-header">
         <div class="img-side">
           <img
@@ -29,7 +29,9 @@
             alt="#"
           />
         </div>
-        <button class="toggle-side"><i class="fas fa-times"></i></button>
+        <button id="toggle-side" class="toggle-side">
+          <i class="fas fa-times"></i>
+        </button>
       </div>
       <div class="side-menu">
         <div class="side-link"><a href="sidebar.html">home</a></div>
@@ -64,5 +66,6 @@
       </div>
     </aside>
     <!-- end of sidebar-->
+    <script src="./main.js"></script>
   </body>
 </html>
