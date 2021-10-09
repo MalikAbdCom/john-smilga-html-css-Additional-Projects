@@ -270,3 +270,24 @@ ul {
 }
 
 /*/////////////////////////////////////////*/
+.grid-content {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("../../images/background-image-modal.jpg") center/cover
+    no-repeat;
+}
+
+.card {
+  padding: 4rem 0;
+  background-color: var(--white);
+  width: 90vw;
+  max-width: var(--fixed-width);
+  text-align: center;
+}
+
+/*///////////////////////////////////////////*/
+.layer-overlay {
+  display: none;
+}
