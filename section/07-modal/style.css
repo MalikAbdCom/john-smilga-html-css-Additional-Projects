@@ -289,5 +289,38 @@ ul {
 
 /*///////////////////////////////////////////*/
 .layer-overlay {
-  display: none;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 228, 196, 0.5);
+  visibility: hidden;
+}
+
+.card {
+  position: relative;
+
+  width: 95vw;
+  height: 35vh;
+}
+
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--red-dark);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+/*//////////////////////////////////////////*/
+.vis-on {
+  visibility: initial;
 }

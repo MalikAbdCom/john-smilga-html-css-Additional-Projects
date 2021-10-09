@@ -19,14 +19,19 @@
     <main class="grid-content">
       <div class="card">
         <h1>info project</h1>
-        <button type="button" class="btn button-modal">open modal</button>
+        <button type="button" id="button-modal" class="btn button-modal">
+          open modal
+        </button>
       </div>
     </main>
     <!--    //////////////////////////////////////////-->
-    <div class="layer-overlay">
+    <div class="layer-overlay" id="layer-overlay">
+      <!--        vis-on-->
       <div class="card">
         <h2>Modal Content</h2>
-        <button class="btn back-btn">back</button>
+        <button class="back-btn" id="back-btn">
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </div>
     <script src="main.js"></script>
