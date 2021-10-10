@@ -270,3 +270,130 @@ ul {
 }
 
 /*/////////////////////////////////////////////////////////*/
+.section-center {
+  min-height: 100vh;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin-bottom: 0;
+}
+
+/*///////////////////////////////////////////////////*/
+.options {
+  display: grid;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+
+.options a {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  border: 1px solid var(--primary-600);
+  padding-left: 1rem;
+  border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+
+.option a:hover {
+  background-color: var(--primary-600);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .options {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .option a {
+    width: 100%;
+  }
+}
+
+/*////////////////////////////////////////////////////*/
+.menu-items {
+  gap: 2rem;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*/////////////////////////////////////////////////////*/
+.menu-item {
+  box-shadow: var(--shadow-1);
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .menu-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img-menu item-price item-price"
+      "img-menu menu-description menu-description";
+  }
+
+  .img-menu {
+    grid-area: img-menu;
+    display: block;
+    margin: auto 0;
+  }
+
+  .item-price {
+    grid-area: item-price;
+  }
+
+  .menu-description {
+    grid-area: menu-description;
+  }
+
+  .item-price {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+  }
+}
+
+/*///////////////////////////*/
+.img-menu {
+  height: 200px;
+}
+
+.img-menu .img {
+  height: 100%;
+}
+
+/*/////////////////////////*/
+.item-price {
+  border-bottom: dotted 2px var(--primary-500);
+}
+
+.item-price h2 {
+  margin: 0.5rem 0;
+}
+
+.item-price h3 {
+  margin: 0.5rem 0;
+  color: var(--red-dark);
+  font-size: 1.3rem;
+}
