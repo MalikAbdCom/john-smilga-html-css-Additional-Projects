@@ -270,3 +270,88 @@ ul {
 }
 
 /*/////////////////////////////////////////////////////*/
+.section-center {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.fix-width {
+  box-shadow: var(--shadow-1);
+  max-width: var(--fixed-width);
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fix-width:hover {
+  box-shadow: var(--shadow-3);
+}
+
+/*///////////////////////////////////////////////*/
+.alert {
+  text-align: center;
+}
+
+.alert + h4 {
+  margin: 0.5rem 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .alert + h4 {
+    text-align: center;
+  }
+}
+
+/*//////////////////////////////////////////////*/
+.form-row {
+  display: flex;
+  height: 3rem;
+  gap: 10px;
+}
+
+/*///////////////////////////////////////////////////////*/
+.grocery-list {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grocery-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-2);
+}
+
+.grocery-item:hover {
+  background-color: var(--grey-200);
+}
+
+/*/////////////////////////////////////////////////*/
+.btn-container button {
+  border: none;
+  background-color: transparent;
+  font-size: 0.7rem;
+}
+
+.edit-btn {
+  color: green;
+}
+
+.delete-btn {
+  color: var(--red-dark);
+}
+
+/*///////////////////////////////////////////////////////*/
+.clear-btn {
+  display: block;
+  margin: 2rem auto 0;
+  border: none;
+  background-color: transparent;
+  color: var(--red-dark);
+  text-transform: capitalize;
+}
