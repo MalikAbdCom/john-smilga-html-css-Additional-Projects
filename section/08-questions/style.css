@@ -267,6 +267,114 @@ ul {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 /*//////////////////////////////////////////////////////////////*/
+.mw-all {
+  display: grid;
+  place-items: center;
+  padding: 2rem 0;
+}
+
+.title-underline {
+  margin-bottom: 2rem;
+}
+
+/*///////////////////////////////////////////////////////*/
+.question-container {
+  display: grid;
+  gap: 2rem;
+  max-width: var(--fixed-width);
+}
+
+.question-item {
+  box-shadow: var(--shadow-1);
+  border: solid 1px var(--grey-200);
+}
+
+.question-item:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.question {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.question p {
+  padding: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .question p {
+    padding: 1rem;
+  }
+}
+
+.question .icon-toggle-on {
+  display: grid;
+  place-items: center;
+}
+
+.question button {
+  transition: var(--transition);
+  border: solid 2px orangered;
+  color: orangered;
+  display: block;
+  padding: 3px;
+}
+
+button i {
+  width: 16px;
+}
+
+.icon-toggle-on button:hover {
+  transform: rotate(90deg);
+}
+
+/*///////////////////////////////////////////////////*/
+.toggle-content {
+  display: none;
+}
+
+.toggle-content p {
+  margin: 1rem;
+  padding: 1rem;
+  border-top: 1px solid var(--grey-700);
+}
+
+.content-on {
+  display: initial;
+}
+
+.icon-toggle-off {
+  display: none;
+}
+
+.off-btn {
+  place-items: center;
+  display: grid;
+}
+
+/*/////////////////////////////////////////*/
+/*dari john smilga*/
+/*dari john smilga*/
+/*dari john smilga*/
+.show-text .question-text {
+  display: block;
+}
+
+.icon-toggle-off {
+  display: none;
+}
+
+.show-text .icon-toggle-off {
+  display: inline;
+}
+
+.show-text .icon-toggle-on {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////*/
